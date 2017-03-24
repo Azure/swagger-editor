@@ -1,0 +1,104 @@
+/*
+ * Branding CSS file. This file is intentially left blank. If you want to
+ * customize Swagger Editor you can serve this file with your CSS that overrides
+ * or extends Swagger Editor styling.
+*/
+
+
+/*.total-wrapper > header,
+.editor.pane,
+.ui-splitbar,
+[tooltip-popup],
+.jump-to-yaml {
+    
+}
+*/
+
+.preview * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+
+/*.ui-splitbar,
+.preview.pane {
+    display: none;
+}*/
+
+main {
+    top: 0;
+}
+
+[ui-view="header"] {
+    display: none;
+}
+
+.preview,
+.preview.pane,
+.preview [marked],
+.info:not([marked]) p {
+    font-family: az_ea_font, wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.preview li.operation>header .http-method {
+    font-family: Consolas;
+}
+
+.preview li.operation {
+    border-radius: 0;
+}
+
+li.operation table.examples>tbody>tr,
+li.operation table.params>tbody>tr,
+li.operation table.respns>tbody>tr,
+li.operation table.security>tbody>tr {
+    border-bottom: 1px solid silver;
+    font-size: 13px;
+}
+
+i.operation table.respns>tbody>tr,
+li.operation table.security>tbody>tr {
+    border-bottom: 1px solid silver;
+    font-size: 13px;
+}
+
+li.operation.get .http-method {
+    background-color: #13c20f;
+}
+
+li.operation.post .http-method {
+    background-color: #2392f7;
+}
+
+li.operation.put .http-method {
+    background-color: #876344;
+}
+
+li.operation.delete .http-method {
+    background-color: #e30012
+}
+
+li.operation.head .http-method {
+    background-color: #2392f7;
+}
+
+li.operation.patch .http-method {
+    background-color: #ff9000;
+}
+
+li.operation.options .http-method {
+    background-color: #bdc3c7;
+}
+
+li.operation.head .http-method {
+    background-color: #bdc3c7;
+}
+
+li.operation.trace .http-method {
+    background-color: #bdc3c7;
+}
+
+li.operation.link .http-method {
+    background-color: #bdc3c7;
+}
