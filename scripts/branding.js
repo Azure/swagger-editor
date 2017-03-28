@@ -8,7 +8,7 @@
  */
 
 SwaggerEditor.controller('BrandingController', function ($scope, $rootScope, YAML, Storage) {
-    let swaggerEditorFacade = {
+    let iswaggerEditor = {
         getDocument: function (callback) {
             YAML.load($rootScope.editorValue, function (error, swaggerObject) {
                 callback(swaggerObject, error);
@@ -27,8 +27,8 @@ SwaggerEditor.controller('BrandingController', function ($scope, $rootScope, YAM
         }
     }
 
-    document.swaggerEditorFacade = swaggerEditorFacade;
+    document.iswaggerEditor = iswaggerEditor;
     var customEvent = document.createEvent("CustomEvent");
-    customEvent.initCustomEvent("swaggerFacadeReady", true, true, swaggerEditorFacade);
+    customEvent.initCustomEvent("iswaggerEditorReady", true, true, iswaggerEditor);
     document.dispatchEvent(customEvent);
 })
