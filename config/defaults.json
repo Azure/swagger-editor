@@ -25,7 +25,7 @@
     "disableFileMenu": true,
     "headerBranding": true,
     "disableNewUserIntro": true,
-    "enableTryIt": false,
+    "enableTryIt": true,
     "brandingCssClass": "",
     "importProxyUrl": "https://cors-it.herokuapp.com/?url=",
     "pointerResolutionBasePath": null
